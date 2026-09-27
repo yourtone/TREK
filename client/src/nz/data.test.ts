@@ -7,9 +7,10 @@ describe('NZ source-backed itinerary', () => {
     expect(new Set(days.map((d) => d.id)).size).toBe(8);
   });
   it('counts only listed road distance, excluding the flight day', () => {
-    expect(days.reduce((sum, d) => sum + d.km, 0)).toBe(1276);
-    expect(days.find((d) => d.id === 8)).toMatchObject({ mode: 'flight', km: 0 });
-    expect(days.find((d) => d.id === 9)?.km).toBe(286);
+    expect(days.reduce((sum, d) => sum + d.km, 0)).toBe(1285);
+    expect(days.find((d) => d.id === 7)).toMatchObject({ mode: 'flight', km: 0 });
+    expect(days.find((d) => d.id === 8)).toMatchObject({ mode: 'drive', km: 152, city: 'Bannockburn' });
+    expect(days.find((d) => d.id === 9)).toMatchObject({ km: 237, subtitle: '班诺克本 → 奥马鲁' });
   });
   it('keeps every map coordinate in the South Island', () => {
     for (const day of days)
@@ -27,12 +28,18 @@ describe('NZ source-backed itinerary', () => {
     expect(url.searchParams.get('waypoints')).toContain('Mount Cook');
     expect(new URL(mapsUrl(places.church)).searchParams.get('query')).toContain('Church of the Good Shepherd');
   });
-  it('retains 8 accommodation nights and marks uncertain activity locations', () => {
-    expect(source.stays.filter((s) => s.city !== '飞机')).toHaveLength(8);
+  it('retains 8 accommodation nights across 7 bookings without private booking fields', () => {
+    expect(source.stays.filter((s) => s.city !== '飞机')).toHaveLength(7);
+    expect(source.stays.find((s) => s.day === 'D5-D6')?.checkIn).toContain('连住2晚');
+    for (const stay of source.stays) {
+      expect(stay).not.toHaveProperty('address');
+      expect(stay).not.toHaveProperty('contact');
+      expect(stay).not.toHaveProperty('confirmation');
+    }
     for (const k of ['stars', 'cook', 'guns', 'skydive'] as const) expect(places[k].approximate).toBe(true);
   });
   it('caches road geometry only for driving days', () => {
-    expect(Object.keys(roads)).toEqual(['3', '4', '5', '6', '9', '10']);
+    expect(Object.keys(roads)).toEqual(['3', '4', '5', '8', '9', '10']);
     for (const road of Object.values(roads)) {
       expect(road.positions.length).toBeGreaterThan(10);
       for (const [lat, lng] of road.positions) {

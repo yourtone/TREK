@@ -947,6 +947,10 @@ button:hover {
   font-size: 8px;
   color: #a9976c;
 }
+.nz-booked {
+  font-size: 8px;
+  color: #53765c;
+}
 .nz-detail-card h3 {
   font-size: 14px;
   font-weight: 500;
@@ -963,6 +967,26 @@ button:hover {
 }
 .nz-preline {
   white-space: pre-line;
+}
+.nz-stay-details {
+  margin: 0 0 13px;
+  border-top: 1px solid #e7ecdf;
+}
+.nz-stay-details > div {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid #e7ecdf;
+  font-size: 10px;
+  line-height: 1.65;
+}
+.nz-stay-details dt { color: #9aa48e; }
+.nz-stay-details dd { color: #68765f; }
+.nz-stay-note {
+  padding: 10px 11px;
+  background: #f1f4ec;
+  border-radius: 5px;
 }
 .nz-text-link {
   font-size: 10px;
