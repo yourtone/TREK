@@ -29,6 +29,7 @@
     "format:check": "prettier --check \"src/**/*.tsx\" \"src/**/*.css\"",
     "dev:nz": "vite --config vite.nz.config.ts",
     "build:nz": "vite build --config vite.nz.config.ts",
+    "postbuild:nz": "cp dist-nz/nz.html dist-nz/index.html",
     "preview:nz": "vite preview --config vite.nz.config.ts --host 127.0.0.1"
   },
   "dependencies": {
