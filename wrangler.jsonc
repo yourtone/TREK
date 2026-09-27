@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "nz",
+  "name": "trek",
   "compatibility_date": "2026-09-27",
   "assets": {
     "directory": "./client/dist-nz",
