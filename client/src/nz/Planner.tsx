@@ -33,6 +33,7 @@ const tabs = [
 export default function Planner() {
   const p = usePlanner(),
     { day } = p;
+  const totalKm = days.reduce((sum, item) => sum + item.km, 0);
   const filtered = day.stops.filter((s) =>
     (s.place.name + s.place.en + s.detail).toLowerCase().includes(p.query.toLowerCase())
   );
@@ -115,9 +116,9 @@ export default function Planner() {
             </div>
             <div>
               <strong>
-                1,276<span>km</span>
+                {totalKm.toLocaleString('en-US')}<span>km</span>
               </strong>
-              <small>已列自驾里程 ≈</small>
+              <small>更新后自驾里程 ≈</small>
             </div>
           </div>
         </section>

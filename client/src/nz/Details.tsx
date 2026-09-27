@@ -9,7 +9,7 @@ export default function Details({ tab, saved, save }: { tab: string; saved: Save
           <BedDouble />
           <div>
             <h2>每一晚，都有归处</h2>
-            <p>8 晚住宿 · 以下为原资料候选，尚未确认预订</p>
+            <p>8 晚 · 7 笔住宿订单 · 已按最新住宿详情整理</p>
           </div>
         </div>
         {source.stays
@@ -20,21 +20,28 @@ export default function Details({ tab, saved, save }: { tab: string; saved: Save
                 <span className="nz-pill">
                   {s.day} · {s.date}
                 </span>
-                <span className="nz-pending">待预订</span>
+                <span className="nz-booked">已预订 · {s.provider}</span>
               </div>
-              <h3>{s.city}</h3>
-              <p className="nz-preline">{s.candidates || '原资料暂未提供候选住宿，可沿用皇后镇连住计划或补充酒店。'}</p>
+              <h3 className="nz-preline">{s.city} · {s.name}</h3>
+              <dl className="nz-stay-details">
+                <div><dt>入住 / 退房</dt><dd className="nz-preline">{s.checkIn}</dd></div>
+                <div><dt>参考金额</dt><dd>{typeof s.amount === 'number' ? `CNY ${s.amount.toLocaleString('zh-CN')}` : s.amount}</dd></div>
+                <div><dt>取消条件</dt><dd>{s.cancellation}</dd></div>
+                <div><dt>餐食 / 停车 / 厨房</dt><dd className="nz-preline">{s.amenities}</dd></div>
+                <div><dt>付款信息</dt><dd>{s.payment}</dd></div>
+              </dl>
+              <p className="nz-preline nz-stay-note">{s.notes}</p>
               <a
                 className="nz-text-link"
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.city + ' hotels New Zealand')}`}
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.name.split('\n')[0] + ', ' + s.city + ', New Zealand')}`}
                 target="_blank"
                 rel="noreferrer"
               >
-                查看该城市住宿 <ExternalLink size={13} />
+                在地图中搜索住宿 <ExternalLink size={13} />
               </a>
             </article>
           ))}
-        <p className="nz-footnote">原资料中的报价仅为参考，币种、日期及是否含税未明确，不作为当前房价。</p>
+        <p className="nz-footnote">为避免公开敏感信息，网页不包含住宿地址、联系电话、订单确认码、PIN 或门锁密码；请出行时查阅原始订单。</p>
       </div>
     );
   if (tab === '航班')
@@ -156,7 +163,7 @@ export default function Details({ tab, saved, save }: { tab: string; saved: Save
           每日时间、里程优先采用自驾详细行程表；航班和待办来自信息汇总。地点使用手工整理的近似坐标。主要自驾路段沿 OSRM
           / OpenStreetMap 道路参考线展示；飞行与镇内活动使用顺序示意线，不提供实时路况。
         </p>
-        <p>观星、冰川徒步、跳伞的集合点尚待订单确认；住宿均为候选。D9 使用 286 km，保留文档 306 km 的差异说明。</p>
+        <p>观星、冰川徒步、跳伞的集合点尚待订单确认。住宿均已按最新订单更新；D8 晚住班诺克本，因此 D9 已改从班诺克本出发。</p>
         <a
           className="nz-text-link"
           href="https://www.newzealand.com/us/feature/south-island-alpine-lakes-itinerary/"

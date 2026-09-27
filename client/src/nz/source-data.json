@@ -24,23 +24,23 @@
     {
       "day": "D6",
       "date": "11/4周三",
-      "route": "Queenstown ⇄ Glenorchy (格林诺奇往返)\n🚗 往返约 94 km⏱️ 纯驾驶往返约 1小时40分",
-      "summary": "【白天】沿最美公路前往魔戒小镇，走 格林诺奇步道\n【傍晚】日落前后乘坐 天空缆车 (Skyline Queenstown) 俯瞰绝美小镇全景与夜景",
-      "schedule": "• 09:00 - 10:00：【自驾】沿绝美瓦卡蒂普湖公路前往魔戒小镇。\n• 10:00 - 12:30：走 格林诺奇步道，打卡标志性红房子，赏湿地风光。\n• 12:30 - 14:00：镇上简单午餐。\n• 14:00 - 15:30：【自驾】返回皇后镇（下午顺光，可在观景台多次停靠拍照）。\n• 17:30 - 18:00：日落前后乘坐 天空缆车 (Skyline) 上山看全景与夜景。"
-    },
-    {
-      "day": "D7",
-      "date": "11/5周四",
       "route": "Queenstown (皇后镇)\n🚗 镇内短途/步辇",
       "summary": "【上午】早场 高空跳伞 (Skydiving)\n【中午】品尝鼎鼎大名的 Fergburger 大脸汉堡\n【下午】瓦卡蒂普湖畔喂海鸥、买伴手礼，自由活动休息",
       "schedule": "• 08:30 - 12:00：早场 高空跳伞 (Skydiving)。\n• 12:30 - 13:30：品尝人气美食 Fergburger 大脸汉堡。\n• 14:00 以后：瓦卡蒂普湖畔喂海鸥、逛街买伴手礼，自由活动休息。"
     },
     {
-      "day": "D8",
-      "date": "11/6周五",
+      "day": "D7",
+      "date": "11/5周四",
       "route": "Queenstown (皇后镇)\n🚗 镇内往返机场",
       "summary": "【全天】参加 米尔福德峡湾固定翼观光飞行 + 游船套餐，\n免去长途拉车劳累，直接从空中欣赏峡湾与冰川之美",
       "schedule": "• 全天安排：从皇后镇机场出发，参加 米尔福德峡湾固定翼观光飞行 + 游船套餐。\n(免去单程近4小时的山路自驾，直接从空中俯瞰冰川峡湾，非常轻松)"
+    },
+    {
+      "day": "D8",
+      "date": "11/6周五",
+      "route": "Queenstown ⇄ Glenorchy (格林诺奇往返)\n🚗 往返约 94 km⏱️ 纯驾驶往返约 1小时40分",
+      "summary": "【白天】沿最美公路前往魔戒小镇，走 格林诺奇步道\n【傍晚】日落前后乘坐 天空缆车 (Skyline Queenstown) 俯瞰绝美小镇全景与夜景",
+      "schedule": "• 09:00 - 10:00：【自驾】沿绝美瓦卡蒂普湖公路前往魔戒小镇。\n• 10:00 - 12:30：走 格林诺奇步道，打卡标志性红房子，赏湿地风光。\n• 12:30 - 14:00：镇上简单午餐。\n• 14:00 - 15:30：【自驾】返回皇后镇（下午顺光，可在观景台多次停靠拍照）。\n• 17:30 - 18:00：日落前后乘坐 天空缆车 (Skyline) 上山看全景与夜景。"
     },
     {
       "day": "D9",
@@ -62,55 +62,105 @@
       "day": "D2",
       "date": "10/31 周六",
       "city": "基督城",
-      "candidates": "美丽的里士满房源和花园 (xhs 美式就爱加冰)"
+      "name": "舒适的套房、独立入口和自助入住\nCozy ensuite & Private entrance & Self Check-In",
+      "provider": "Airbnb",
+      "amount": 639.52,
+      "cancellation": "2026/10/30 15:00前免费取消；之后不可退款",
+      "checkIn": "10/31 15:00入住\n11/1 10:00退房",
+      "amenities": "无早餐，推荐LeBakerman早餐或Jolly Seafood yum cha，距离仅4分钟路程。\n开车4分钟即可抵达The Landing（电影院、超市、餐厅）。\n免费无线网络和街外停车位。",
+      "notes": "自助入住、独立入口；页面入住方式标为“其他”。\n入住指南及Wi-Fi信息于入住前24小时开放。\n安静时段23:00–07:00。\nD2航班17:20抵达，提前查看进入指引并告知预计抵达时间。",
+      "payment": "凭证显示已付CNY 639.52"
     },
     {
       "day": "D3",
       "date": "11/1周日",
       "city": "Tekapo(蒂卡波)",
-      "candidates": "Stargazer's Luxury Retreat (观星小屋) (风光喵) 2707\nThe Chalet (henkel hut房型) (xhs豆撒包/xhs 琳琳linggg),只能email预定\nBoulder 15A (xhs nana_11)\nOhau观星民宿 (xhs Nev)\nJo's Place (xhs 谷谷大王)\nPeppers Bluewater resort (xhs I am Why),没电梯不太方便 1700\nThe Huts at Lakes Edge (xhs Karry芥末圣代) 2000\nBen Ohau (xhs 付付一定瘦/xhs 大美若Cara)\nBraemer Station (xhs多人推荐，极其难订)\n优选镇中心，离好牧羊人教堂近，晚上观星不需开车"
+      "name": "Simply Stunning Stars A",
+      "provider": "Booking",
+      "amount": 2863,
+      "cancellation": "当地时间2026/10/17 23:59前免费取消；10/18 00:00起NZD 741。不可改入住日期。",
+      "checkIn": "房东消息：11/1 15:00–18:00入住；18:00后自助入住\n11/2 07:00–10:00退房",
+      "amenities": "不含餐；免费私人停车，无需预约",
+      "notes": "接待处和房源地址不同。\n18:00后到达需获取自助入住指引及房门密码；订单时间为15:00–20:30入住、03:00–11:00退房，与房东消息不同，需确认。\nhttps://www.booking.com/hotel/nz/simply-stunning.zh-cn.html",
+      "payment": "NZD 741；CNY 2,863仅为订单汇率估算。无需预付，由住宿收款，付款完成状态未说明。信用卡另收3%；如全额刷卡附加NZD 22.23，合计NZD 763.23。新西兰银行转账需至少提前7天。"
     },
     {
       "day": "D4",
       "date": "11/2周一",
       "city": "Wānaka (瓦纳卡)",
-      "candidates": "The Lookout - boutique mountain hideaway (山顶观景民宿) (风光喵) 1400\nEdgewater Hotel (xhs豆撒包)\nedgewater酒店 (xhs 纯白头像无名字)\nLake Studio (xhs I am Why) 1000左右\nRetro Pad (xhs 谷谷大王)\n湖东岸小镇中心，步行可达孤独的树和主街"
+      "name": "El Gran - Quiet, Central & Scenic Apartment",
+      "provider": "Booking",
+      "amount": 1359,
+      "cancellation": "当地时间2026/10/27 23:59前免费取消；10/28 00:00起NZD 264.60。不可改入住日期。",
+      "checkIn": "房东消息：11/2 15:00起入住\n11/3 10:00退房\n订单：16:00起入住、11:00前退房",
+      "amenities": "不含餐；免费私人停车，无需预约",
+      "notes": "入住前几天发送路线、进入方式和Wi-Fi信息。\n原表记载现场钥匙盒，密码待收。\n两份材料时间不一致，需确认；D5建议09:00游湖前退房。\nhttps://www.booking.com/hotel/nz/el-gran-quiet-central-amp-scenic-apartment.zh-cn.html",
+      "payment": "NZD 354.60，含NZD 90清洁费及税；PDF估算CNY 1,359，原表记1,370，保留原笔记，结算以实际支付为准。凭证未说明是否已付。"
     },
     {
-      "day": "D5",
-      "date": "11/3周二",
+      "day": "D5-D6",
+      "date": "11/3周二 - 11/4周三",
       "city": "Queenstown (皇后镇)",
-      "candidates": "Lakeside Maisonette - absolute lakefront (湖景独立屋) (风光喵) 1617\nThe Black Ridge | East Wing (xhs豆撒包)\nGemini 1号套房 (xhs 谷谷大王)\nHouse Lakeside (xhs I am Why) 2000"
-    },
-    {
-      "day": "D6",
-      "date": "11/4周三",
-      "city": "Queenstown (皇后镇)",
-      "candidates": "镇中心/湖畔比较方便（逛吃方便，不开车可选），\n预算充足选湖景Fernhill区，\n性价比选Frankton区/五英里区（带免费停车）\n喜欢安静选Kelvin Heights"
+      "name": "黄金地段，景色迷人\nPrime Location with Brilliant View",
+      "provider": "Airbnb",
+      "amount": 2480.57,
+      "cancellation": "2026/10/4 15:00前免费取消；此后至10/27 15:00前可部分退款。",
+      "checkIn": "11/3 15:00入住\n11/5 10:00退房（连住2晚）",
+      "amenities": "早餐应该无。\n请按房东停车指引操作，勿驶入房屋车道；是否收费未说明。\n不提供厨房，仅可用微波炉。",
+      "notes": "入住指南及Wi-Fi于入住前48小时开放。\n安静时段22:00–07:00。\n导航与入口详见地址列，切勿只依赖Google Maps。\nD7需10:00前退房，结合峡湾航班安排退房、行李及换房。\n不允许做饭，仅提供微波炉。\n与房东一起住，公共区域不太去。",
+      "payment": "已付CNY 2,480.57，涵盖11/3–11/5共2晚；仅在D5计入金额。"
     },
     {
       "day": "D7",
       "date": "11/5周四",
       "city": "Queenstown (皇后镇)",
-      "candidates": ""
+      "name": "月光下的度假胜地！浪漫世外桃源 + 热水浴缸\nMoonlight Escape! Romantic Retreat + Hot Tub",
+      "provider": "Airbnb",
+      "amount": 1464.16,
+      "cancellation": "此订单不可退款。",
+      "checkIn": "11/5 15:00入住\n11/6 11:00退房",
+      "amenities": "免费早餐送至套房，具体供应时间/本订单安排待确认。\n停车未说明。\n不提供厨房、微波炉。",
+      "notes": "房东亲自迎接，需联系房东确认抵达时间和入住安排。\nWi-Fi于入住前48小时开放。\n房东介绍提到户外雪松热水浴缸。\nD7峡湾活动当日换房；D8计划09:00出发格林诺奇，建议出发前退房并协调早餐时间。",
+      "payment": "凭证显示已付CNY 1,464.16"
     },
     {
       "day": "D8",
       "date": "11/6周五",
-      "city": "Queenstown (皇后镇)",
-      "candidates": ""
+      "city": "Bannockburn（班诺克本）",
+      "name": "位于Olives的私人单间公寓\nPrivate Studio Unit in the Olives",
+      "provider": "Airbnb",
+      "amount": 855.56,
+      "cancellation": "2026/11/1 14:00前免费取消；之后不可退款。",
+      "checkIn": "11/6 14:00入住\n11/7 10:00退房",
+      "amenities": "早餐未说明。可驶入并停在所住单元旁；停车费未说明。",
+      "notes": "钥匙盒自助入住，需联系房东获取进入方式/密码；Wi-Fi于入住前48小时开放。\nD8格林诺奇返回皇后镇后需前往Bannockburn，提前确认晚到安排；D9应从这里出发，原行程的起点和里程待同步。",
+      "payment": "凭证显示已付CNY 855.56"
     },
     {
       "day": "D9",
       "date": "11/7周六",
       "city": "Oamaru (奥马鲁)",
-      "candidates": ""
+      "name": "袖珍小屋度假\nTiny home getaway",
+      "provider": "Airbnb",
+      "amount": 791.43,
+      "cancellation": "2026/10/24 15:00前免费取消；此后至10/31 15:00前可部分退款。",
+      "checkIn": "11/7 15:00入住\n11/8 10:00退房",
+      "amenities": "早餐未说明。院内可停车；停车费未说明。",
+      "notes": "钥匙盒自助入住，需联系房东获取进入方式/密码；Wi-Fi于入住前48小时开放。\n原计划13:30–14:30入住早于订单15:00，提前入住/寄存需确认。\n导航需使用房东确认的实际门牌，详见原始订单；D10 09:30出发符合退房时间。",
+      "payment": "凭证显示已付CNY 791.43"
     },
     {
       "day": "D10",
       "date": "11/8周日",
       "city": "飞机",
-      "candidates": ""
+      "name": "不适用（夜间航班）",
+      "provider": "不适用",
+      "amount": "不适用",
+      "cancellation": "不适用",
+      "checkIn": "11/8 10:00前退奥马鲁房源\n当晚22:30基督城起飞",
+      "amenities": "不适用",
+      "notes": "D10无当晚住宿订单；按行程当晚乘机回国。",
+      "payment": "不适用"
     }
   ],
   "sources": [
