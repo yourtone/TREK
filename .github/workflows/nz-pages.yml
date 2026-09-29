@@ -1,4 +1,5 @@
 name: Publish NZ Travel Planner
+# Manual pushes to this workflow file also trigger a fresh Pages deployment.
 
 on:
   push:
