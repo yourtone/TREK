@@ -4,10 +4,15 @@ import { useEffect, useState } from 'react';
 import { MapContainer, Marker, Polyline, TileLayer, Tooltip, useMap, useMapEvents } from 'react-leaflet';
 import { days, type Day, type Place } from './data';
 import roadRoutes from './road-routes.json';
-const roads: Record<string, { positions: [number, number][] }> = Object.fromEntries(
+const roads: Record<string, { positions: [number, number][]; flightPositions?: [number, number][] }> = Object.fromEntries(
   Object.entries(roadRoutes).map(([id, route]) => [
     id,
-    { positions: route.positions.map(([lat, lng]): [number, number] => [lat, lng]) },
+    {
+      positions: route.positions.map(([lat, lng]): [number, number] => [lat, lng]),
+      flightPositions: 'flightPositions' in route
+        ? route.flightPositions.map(([lat, lng]): [number, number] => [lat, lng])
+        : undefined,
+    },
   ])
 );
 const colors = ['#397766', '#548da7', '#a5844a', '#688c63', '#a5767c', '#777bb0', '#bf855f', '#687f98'];
@@ -71,18 +76,30 @@ export default function TripMap({
           eventHandlers={{ tileerror: () => setTileError(true), tileload: () => setTileError(false) }}
         />
         <Viewport day={day} overview={overview} focus={focus} reset={reset} />
-        {visible.map((d) => (
-          <Polyline
-            key={d.id}
-            positions={roads[d.id]?.positions || d.stops.map((s) => s.place.position)}
-            pathOptions={{
-              color: colors[d.id - 3],
-              weight: overview ? 3 : 4,
-              opacity: 0.85,
-              dashArray: roads[d.id] ? undefined : d.mode === 'flight' ? '3 10' : '8 7',
-            }}
-          />
-        ))}
+        {visible.flatMap((d) => {
+          const road = roads[d.id];
+          const lines = [
+            <Polyline
+              key={`${d.id}-ground`}
+              positions={road?.positions || d.stops.map((s) => s.place.position)}
+              pathOptions={{
+                color: colors[d.id - 3],
+                weight: overview ? 3 : 4,
+                opacity: 0.85,
+                dashArray: road ? undefined : d.mode === 'flight' ? '3 10' : '8 7',
+              }}
+            />,
+          ];
+          if (road?.flightPositions)
+            lines.push(
+              <Polyline
+                key={`${d.id}-flight`}
+                positions={road.flightPositions}
+                pathOptions={{ color: colors[d.id - 3], weight: overview ? 2 : 3, opacity: 0.8, dashArray: '3 10' }}
+              />
+            );
+          return lines;
+        })}
         <PlaceMarkers day={day} overview={overview} focus={focus} onSelect={onSelect} />
 
         <MapButtons
@@ -110,7 +127,7 @@ export default function TripMap({
       <div className="nz-map-bottom">
         <MapIcon size={15} />
         <span>
-          {day.mode === 'flight' && !overview ? '虚线为飞行方向示意' : '实线为主要道路参考 · 虚线为活动顺序示意'} ·
+          {day.mode === 'flight' && !overview ? '实线为地面转场 · 虚线为飞行方向示意' : '实线为主要道路参考 · 虚线为活动顺序示意'} ·
           地点坐标仅供行程浏览
         </span>
       </div>

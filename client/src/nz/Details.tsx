@@ -1,4 +1,4 @@
-import { BedDouble, Check, ExternalLink, FileText, Plane, Wallet } from 'lucide-react';
+import { BedDouble, Check, ExternalLink, FileText, Plane, TicketCheck, Wallet } from 'lucide-react';
 import { packing, source } from './data';
 import type { Saved } from './usePlanner';
 export default function Details({ tab, saved, save }: { tab: string; saved: Saved; save: (x: Saved) => void }) {
@@ -25,6 +25,7 @@ export default function Details({ tab, saved, save }: { tab: string; saved: Save
               <h3 className="nz-preline">{s.city} · {s.name}</h3>
               <dl className="nz-stay-details">
                 <div><dt>入住 / 退房</dt><dd className="nz-preline">{s.checkIn}</dd></div>
+                {'address' in s && <div><dt>住宿地址</dt><dd className="nz-preline">{s.address}</dd></div>}
                 <div><dt>参考金额</dt><dd>{typeof s.amount === 'number' ? `CNY ${s.amount.toLocaleString('zh-CN')}` : s.amount}</dd></div>
                 <div><dt>取消条件</dt><dd>{s.cancellation}</dd></div>
                 <div><dt>餐食 / 停车 / 厨房</dt><dd className="nz-preline">{s.amenities}</dd></div>
@@ -33,15 +34,51 @@ export default function Details({ tab, saved, save }: { tab: string; saved: Save
               <p className="nz-preline nz-stay-note">{s.notes}</p>
               <a
                 className="nz-text-link"
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.name.split('\n')[0] + ', ' + s.city + ', New Zealand')}`}
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('mapQuery' in s ? s.mapQuery : s.name.split('\n')[0] + ', ' + s.city + ', New Zealand')}`}
                 target="_blank"
                 rel="noreferrer"
               >
-                在地图中搜索住宿 <ExternalLink size={13} />
+                导航至住宿 <ExternalLink size={13} />
               </a>
             </article>
           ))}
-        <p className="nz-footnote">为避免公开敏感信息，网页不包含住宿地址、联系电话、订单确认码、PIN 或门锁密码；请出行时查阅原始订单。</p>
+        <p className="nz-footnote">住宿地址来自最新住宿详情；网页不显示联系电话、订单确认码、PIN 或门锁密码。</p>
+      </div>
+    );
+  if (tab === '体验')
+    return (
+      <div className="nz-detail-content">
+        <div className="nz-section-heading">
+          <TicketCheck />
+          <div>
+            <h2>已经确定的高光时刻</h2>
+            <p>5 个已预订项目 · 已按确认单更新集合时间</p>
+          </div>
+        </div>
+        {source.experiences.map((experience) => (
+          <article className="nz-detail-card" key={experience.day}>
+            <div className="nz-card-top">
+              <span className="nz-pill">{experience.day} · {experience.date}</span>
+              <span className="nz-booked">{experience.status}</span>
+            </div>
+            <h3>{experience.name}</h3>
+            <dl className="nz-stay-details">
+              <div><dt>活动时间</dt><dd>{experience.time}</dd></div>
+              <div><dt>签到要求</dt><dd>{experience.checkIn}</dd></div>
+              <div><dt>集合地点</dt><dd>{experience.meeting}</dd></div>
+            </dl>
+            <p className="nz-stay-note">{experience.notes}</p>
+            <a
+              className="nz-text-link"
+              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(experience.meeting + ', New Zealand')}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              查看集合地点 <ExternalLink size={13} />
+            </a>
+          </article>
+        ))}
+        <p className="nz-footnote">页面只保留出行所需的公开集合信息，不显示订单号、凭证码或个人联系方式。</p>
       </div>
     );
   if (tab === '航班')
@@ -160,10 +197,10 @@ export default function Details({ tab, saved, save }: { tab: string; saved: Save
       <div className="nz-detail-card">
         <h3>整理说明</h3>
         <p>
-          每日时间、里程优先采用自驾详细行程表；航班和待办来自信息汇总。地点使用手工整理的近似坐标。主要自驾路段沿 OSRM
-          / OpenStreetMap 道路参考线展示；飞行与镇内活动使用顺序示意线，不提供实时路况。
+          每日时间、里程优先采用最新自驾详细行程表；预订项目和住宿分别按确认单与住宿行程单整理。主要自驾路段沿 OSRM
+          / OpenStreetMap 道路参考线展示；D7 同时展示地面转场与固定翼飞行方向，不提供实时路况。
         </p>
-        <p>观星、冰川徒步、跳伞的集合点尚待订单确认。住宿均已按最新订单更新；D8 晚住班诺克本，因此 D9 已改从班诺克本出发。</p>
+        <p>冰川徒步、射击、跳伞、米尔福德飞行游船和企鹅夜观均已按确认单更新。蒂卡波观星团已取消，D3 晚间改为根据天气自行肉眼观星。</p>
         <a
           className="nz-text-link"
           href="https://www.newzealand.com/us/feature/south-island-alpine-lakes-itinerary/"
