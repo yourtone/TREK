@@ -17,6 +17,7 @@ import {
   NotebookPen,
   Plane,
   Search,
+  TicketCheck,
   X,
 } from 'lucide-react';
 import { days, mapsUrl, routeUrl } from './data';
@@ -26,6 +27,7 @@ import { usePlanner } from './usePlanner';
 const tabs = [
   { name: '行程', icon: CalendarDays },
   { name: '住宿', icon: BedDouble },
+  { name: '体验', icon: TicketCheck },
   { name: '航班', icon: Plane },
   { name: '清单', icon: ListChecks },
   { name: '资料', icon: FolderOpen },
@@ -172,7 +174,7 @@ export default function Planner() {
                     <div className="nz-day-stats">
                       <span>
                         {day.mode === 'flight' ? <Plane size={14} /> : <Car size={14} />}{' '}
-                        {day.km ? `约 ${day.km} km` : day.mode === 'flight' ? '往返观光飞行' : '镇内活动'}
+                        {day.km ? `约 ${day.km} km${day.mode === 'flight' ? ' 地面转场' : ''}` : '镇内活动'}
                       </span>
                       <span>
                         <Clock3 size={14} />
