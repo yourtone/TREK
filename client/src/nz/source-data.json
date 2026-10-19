@@ -4,21 +4,21 @@
       "day": "D3",
       "date": "11/1周日",
       "route": "Christchurch → Lake Tekapo｜约219 km｜计划驾驶3小时30分",
-      "summary": "基督城退房出发；蒂卡波午餐、补给、湖畔与好牧羊人教堂；15:00先到接待处办理入住；天黑后自行肉眼观星。",
-      "schedule": "08:00早餐；08:45退房验车；09:15出发；12:45午餐；15:00接待处办理入住；15:30湖畔与教堂；17:30晚餐。观星团已取消，天黑后根据云量在住宿附近或安全的湖畔自行肉眼观星。"
+      "summary": "基督城退房出发；蒂卡波午餐、补给、湖畔与好牧羊人教堂；15:00后直接到11 Coulson Lane A单元键盘锁自助入住；天黑后自行肉眼观星。",
+      "schedule": "08:00早餐；08:45退房验车；09:15出发；12:45午餐；15:00在11 Coulson Lane A单元自助入住；15:30湖畔与教堂；17:30晚餐。观星团已取消，天黑后根据云量在住宿附近或安全的湖畔自行肉眼观星。"
     },
     {
       "day": "D4",
       "date": "11/2周一",
       "route": "Lake Tekapo → Mount Cook Airport → Wānaka｜约303 km｜计划驾驶4小时30分",
       "summary": "普卡基湖短停；11:15已预订塔斯曼冰川直升机徒步；下午前往瓦纳卡。",
-      "schedule": "07:30早餐；08:30出发；10:20抵达机场；10:55前集合；11:15–14:15冰川徒步；14:50出发；17:50左右抵达瓦纳卡。"
+      "schedule": "07:30早餐；08:30出发；10:20抵达机场；10:55前集合；11:15–14:15冰川徒步；14:50出发；17:50左右抵达瓦纳卡。 新住宿48 Kelliher Drive；街边停车，15:00起入住，次日10:00前退房。"
     },
     {
       "day": "D5",
       "date": "11/3周二",
       "route": "Wānaka → Real Guns NZ → Arrowtown → Queenstown｜约76 km｜计划驾驶2小时",
-      "summary": "瓦纳卡湖畔；12:00已预订真枪射击；箭镇午餐与漫步；入住皇后镇新住宿。",
+      "summary": "从48 Kelliher Drive出发；瓦纳卡湖畔；12:00已预订真枪射击；箭镇午餐与漫步；入住皇后镇新住宿。",
       "schedule": "07:30早餐；09:00湖畔；10:00退房；11:45前射击签到；12:00体验；14:20箭镇；16:00前往皇后镇入住。"
     },
     {
@@ -77,31 +77,31 @@
       "day": "D3",
       "date": "11/1周日",
       "city": "Tekapo(蒂卡波)",
-      "name": "Simply Stunning Stars A",
-      "provider": "Booking",
-      "amount": 2863,
-      "cancellation": "当地时间2026/10/17 23:59前免费取消；10/18 00:00起NZD 741。不可改入住日期。",
-      "checkIn": "房东消息：11/1 15:00–18:00入住；18:00后自助入住\n11/2 07:00–10:00退房",
-      "amenities": "不含餐；免费私人停车，无需预约",
-      "address": "住宿：5 Mistake Drive, Lake Tekapo 7999\n接待处：14 Rapuwai Lane, Lake Tekapo 7999（Lake Tekapo Village Motel 内）",
-      "mapQuery": "5 Mistake Drive, Lake Tekapo 7999, New Zealand",
-      "notes": "接待处和房源地址不同。\n18:00后到达需获取自助入住指引及房门密码；订单时间为15:00–20:30入住、03:00–11:00退房，与房东消息不同，需确认。\nhttps://www.booking.com/hotel/nz/simply-stunning.zh-cn.html",
-      "payment": "NZD 741；CNY 2,863仅为订单汇率估算。无需预付，由住宿收款，付款完成状态未说明。信用卡另收3%；如全额刷卡附加NZD 22.23，合计NZD 763.23。新西兰银行转账需至少提前7天。"
+      "name": "New stylish 1bedroom 1living /premium studio/UnitA",
+      "provider": "Airbnb",
+      "amount": 1417.27,
+      "cancellation": "2026/10/25 15:00前取消可获部分退款；之后不可退款。退款金额及页面时区未注明。",
+      "checkIn": "11/1 15:00起入住\n11/2 10:00前退房（1晚，2位房客）",
+      "amenities": "早餐、停车及厨房：新凭证未说明，待向房东确认。",
+      "address": "Unit A, 11 Coulson Lane, Lake Tekapo, Canterbury 7999, New Zealand",
+      "mapQuery": "Unit A, 11 Coulson Lane, Lake Tekapo, Canterbury 7999, New Zealand",
+      "notes": "A单元；键盘锁自助入住。房东将在抵达前发送入住详情，门锁密码待收。\n最多3人；不允许携带宠物。\n直接前往新房源，不再前往Explore Tekapo接待处。",
+      "payment": "已付CNY 1,417.27；2位房客，1晚。"
     },
     {
       "day": "D4",
       "date": "11/2周一",
       "city": "Wānaka (瓦纳卡)",
-      "name": "El Gran - Quiet, Central & Scenic Apartment",
-      "provider": "Booking",
-      "amount": 1359,
-      "cancellation": "当地时间2026/10/27 23:59前免费取消；10/28 00:00起NZD 264.60。不可改入住日期。",
-      "checkIn": "房东消息：11/2 15:00起入住\n11/3 10:00退房\n订单：16:00起入住、11:00前退房",
-      "amenities": "不含餐；免费私人停车，无需预约",
-      "address": "67 Matai Road, Wanaka 9305, New Zealand",
-      "mapQuery": "67 Matai Road, Wanaka 9305, New Zealand",
-      "notes": "入住前几天发送路线、进入方式和Wi-Fi信息。\n原表记载现场钥匙盒，密码待收。\n两份材料时间不一致，需确认；D5建议09:00游湖前退房。\nhttps://www.booking.com/hotel/nz/el-gran-quiet-central-amp-scenic-apartment.zh-cn.html",
-      "payment": "NZD 354.60，含NZD 90清洁费及税；PDF估算CNY 1,359，原表记1,370，保留原笔记，结算以实际支付为准。凭证未说明是否已付。"
+      "name": "Premium King studio close to lake and town",
+      "provider": "Airbnb",
+      "amount": 1263.57,
+      "cancellation": "页面载明预订后24小时内可免费取消；之后不可退款。未提供下单时间，无法确定绝对截止时间，需在Airbnb订单中核对。",
+      "checkIn": "11/2 15:00起入住\n11/3 10:00前退房（1晚，2位房客）",
+      "amenities": "停车：房源外街边停车（按房东指引）。\n早餐及厨房：新凭证未说明，待确认。",
+      "address": "48 Kelliher Drive, Wānaka, Otago 9305, New Zealand",
+      "mapQuery": "48 Kelliher Drive, Wānaka, Otago 9305, New Zealand",
+      "notes": "沿车道右侧小径走向带welcome标识的门，穿过门后取钥匙盒，密码已在住宿详情表保存，用钥匙打开推拉门。\n可预约房东见面交钥匙；未提前约定不得15:00前入住，提前入住需至少24小时联系。\nWi-Fi信息入住前48小时开放；最多2人，不允许携带宠物。",
+      "payment": "已付CNY 1,263.57；2位房客，1晚。"
     },
     {
       "day": "D5-D6",

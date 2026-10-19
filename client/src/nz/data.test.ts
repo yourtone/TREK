@@ -24,10 +24,10 @@ describe('NZ source-backed itinerary', () => {
   it('creates encoded navigation links with all intermediate stops', () => {
     const url = new URL(routeUrl(days[1]));
     expect(url.searchParams.get('origin')).toContain('Lake Tekapo');
-    expect(url.searchParams.get('destination')).toContain('67 Matai Road');
+    expect(url.searchParams.get('destination')).toContain('48 Kelliher Drive');
     expect(url.searchParams.get('waypoints')).toContain('Mount Cook');
     expect(new URL(mapsUrl(places.church)).searchParams.get('query')).toContain('Church of the Good Shepherd');
-    expect(new URL(routeUrl(days[0])).searchParams.get('destination')).toContain('5 Mistake Drive');
+    expect(new URL(routeUrl(days[0])).searchParams.get('destination')).toContain('11 Coulson Lane');
     expect(days[0].stops.find((stop) => stop.place.id === 'stars')).toMatchObject({ category: '肉眼观星' });
   });
   it('retains 8 accommodation nights across 7 bookings with verified addresses', () => {
@@ -68,5 +68,7 @@ describe('NZ source-backed itinerary', () => {
       }
     }
     expect(roads['7'].flightPositions).toHaveLength(3);
+    expect(places.tekapoStay.approximate).toBe(false);
+    expect(places.wanakaStay.approximate).toBe(false);
   });
 });
