@@ -7,10 +7,11 @@ describe('NZ source-backed itinerary', () => {
     expect(new Set(days.map((d) => d.id)).size).toBe(8);
   });
   it('uses the latest detailed-itinerary distances, including D7 ground transfers', () => {
-    expect(days.reduce((sum, d) => sum + d.km, 0)).toBe(1274);
+    expect(days.reduce((sum, d) => sum + d.km, 0)).toBe(1286);
     expect(days.find((d) => d.id === 7)).toMatchObject({ mode: 'flight', km: 25 });
     expect(days.find((d) => d.id === 8)).toMatchObject({ mode: 'drive', km: 152, city: 'Bannockburn' });
     expect(days.find((d) => d.id === 9)).toMatchObject({ km: 236, subtitle: '班诺克本 → 奥马拉马 → 库罗 → 奥马鲁' });
+    expect([roads['3'].distanceKm, roads['4'].distanceKm, roads['5'].distanceKm]).toEqual([225, 306, 79]);
   });
   it('keeps every map coordinate in the South Island', () => {
     for (const day of days)
