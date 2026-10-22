@@ -33,7 +33,7 @@
       "date": "11/5周四",
       "route": "旧住宿 → 39 Lucas Place ⇄ Milford Sound → Moonlight Escape｜地面约25 km",
       "summary": "08:00已预订米尔福德固定翼飞行与游船；当天退旧住宿并入住Moonlight Escape。",
-      "schedule": "05:30早餐；06:10退房装车；06:45确认天气；07:15到39 Lucas Place；08:00–13:00飞行游船；14:15前往新住宿；15:00后入住。11月4日17:00前确认改为自驾集合。"
+      "schedule": "05:30早餐；06:10退房装车；06:45确认天气；07:15前自驾到39 Lucas Place签到，现场免费停车；08:00–13:00飞行游船；14:15前往新住宿；15:00后入住。运营商已于2026/10/22确认Self Drive。"
     },
     {
       "day": "D8",
@@ -46,8 +46,8 @@
       "day": "D9",
       "date": "11/7周六",
       "route": "Bannockburn → Omarama → Kurow → Oamaru｜约236 km｜计划驾驶4小时30分",
-      "summary": "经奥马拉马和库罗到奥马鲁；15:00入住；20:15已预订小蓝企鹅高级看台。",
-      "schedule": "08:30早餐；10:00出发；11:45奥马拉马午餐；14:30抵达奥马鲁；15:00入住；15:30历史街区；20:00前企鹅夜观签到；21:45左右结束。"
+      "summary": "经奥马拉马和库罗到奥马鲁；15:00入住；20:15参加小蓝企鹅Premium Stand夜观。官方已确认2位成人的预订。",
+      "schedule": "08:30早餐；10:00出发；11:45奥马拉马午餐；14:30抵达奥马鲁；15:00入住；15:30历史街区；20:00前企鹅夜观签到；20:15–21:45 Premium Stand Evening Viewing。官方已确认预订入系统。"
     },
     {
       "day": "D10",
@@ -61,107 +61,107 @@
     {
       "day": "D2",
       "date": "10/31 周六",
-      "city": "基督城",
-      "name": "舒适的套房、独立入口和自助入住\nCozy ensuite & Private entrance & Self Check-In",
+      "city": "Christchurch（基督城）",
+      "name": "Cozy ensuite & Private entrance & Self Check-In",
       "provider": "Airbnb",
       "amount": 639.52,
-      "cancellation": "2026/10/30 15:00前免费取消；之后不可退款",
-      "checkIn": "10/31 15:00入住\n11/1 10:00退房",
-      "amenities": "无早餐，推荐LeBakerman早餐或Jolly Seafood yum cha，距离仅4分钟路程。\n开车4分钟即可抵达The Landing（电影院、超市、餐厅）。\n免费无线网络和街外停车位。",
+      "cancellation": "2026/10/30 15:00前免费取消；之后不可退款。",
+      "checkIn": "10/31 15:00起入住\n11/1 10:00前退房",
+      "amenities": "早餐未注明。房屋正前方提供免费路边停车。无厨房；有微波炉和迷你冰箱。",
       "address": "5 Bronco Drive, Christchurch, Canterbury 8025, New Zealand",
       "mapQuery": "5 Bronco Drive, Christchurch 8025, New Zealand",
-      "notes": "自助入住、独立入口；页面入住方式标为“其他”。\n入住指南及Wi-Fi信息于入住前24小时开放。\n安静时段23:00–07:00。\nD2航班17:20抵达，提前查看进入指引并告知预计抵达时间。",
-      "payment": "凭证显示已付CNY 639.52"
+      "notes": "独立入口、自助入住；入住指南及Wi-Fi于入住前24小时开放。安静时段23:00–07:00；禁烟、禁电子烟。抵达前保存进入指引。",
+      "payment": "已付CNY 639.52。"
     },
     {
       "day": "D3",
       "date": "11/1周日",
-      "city": "Tekapo(蒂卡波)",
+      "city": "Lake Tekapo（蒂卡波）",
       "name": "New stylish 1bedroom 1living /premium studio/UnitA",
       "provider": "Airbnb",
       "amount": 1417.27,
-      "cancellation": "2026/10/25 15:00前取消可获部分退款；之后不可退款。退款金额及页面时区未注明。",
-      "checkIn": "11/1 15:00起入住\n11/2 10:00前退房（1晚，2位房客）",
-      "amenities": "早餐、停车及厨房：新凭证未说明，待向房东确认。",
+      "cancellation": "2026/10/25 15:00前可部分退款；之后不可退款。",
+      "checkIn": "11/1 15:00起入住\n11/2 10:00前退房",
+      "amenities": "早餐未注明。提供免费院内分配车位。完整厨房含炉灶、微波炉和洗碗机；做饭需自备食用油及食材。",
       "address": "Unit A, 11 Coulson Lane, Lake Tekapo, Canterbury 7999, New Zealand",
       "mapQuery": "Unit A, 11 Coulson Lane, Lake Tekapo, Canterbury 7999, New Zealand",
-      "notes": "A单元；键盘锁自助入住。房东将在抵达前发送入住详情，门锁密码待收。\n最多3人；不允许携带宠物。\n直接前往新房源，不再前往Explore Tekapo接待处。",
-      "payment": "已付CNY 1,417.27；2位房客，1晚。"
+      "notes": "A单元，键盘锁自助入住；抵达前从Airbnb取得进入和停车指引。安静时段21:00–07:00；最多3人，不允许携带宠物。提供Wi-Fi、洗衣机、晾衣架、空调和供暖。",
+      "payment": "已付CNY 1,417.27。"
     },
     {
       "day": "D4",
       "date": "11/2周一",
-      "city": "Wānaka (瓦纳卡)",
+      "city": "Wānaka（瓦纳卡）",
       "name": "Premium King studio close to lake and town",
       "provider": "Airbnb",
       "amount": 1263.57,
-      "cancellation": "页面载明预订后24小时内可免费取消；之后不可退款。未提供下单时间，无法确定绝对截止时间，需在Airbnb订单中核对。",
-      "checkIn": "11/2 15:00起入住\n11/3 10:00前退房（1晚，2位房客）",
-      "amenities": "停车：房源外街边停车（按房东指引）。\n早餐及厨房：新凭证未说明，待确认。",
+      "cancellation": "不可退款。",
+      "checkIn": "11/2 15:00起入住\n11/3 10:00前退房",
+      "amenities": "早餐未注明。单间外提供免费街边停车。简易备餐区含微波炉和迷你冰箱；无完整厨房。",
       "address": "48 Kelliher Drive, Wānaka, Otago 9305, New Zealand",
       "mapQuery": "48 Kelliher Drive, Wānaka, Otago 9305, New Zealand",
-      "notes": "沿车道右侧小径走向带welcome标识的门，穿过门后取钥匙盒，密码已在住宿详情表保存，用钥匙打开推拉门。\n可预约房东见面交钥匙；未提前约定不得15:00前入住，提前入住需至少24小时联系。\nWi-Fi信息入住前48小时开放；最多2人，不允许携带宠物。",
-      "payment": "已付CNY 1,263.57；2位房客，1晚。"
+      "notes": "沿车道右侧小径前往带welcome标识的门，进入方式请查看私人住宿资料。提前入住须至少提前24小时联系。提供Wi-Fi、空调和供暖；无洗衣机、无烘干机。",
+      "payment": "已付CNY 1,263.57。"
     },
     {
       "day": "D5-D6",
       "date": "11/3周二 - 11/4周三",
-      "city": "Queenstown (皇后镇)",
-      "name": "步行到镇中心 - 空调 - 免费停车 - 中央单间\nWalk to town - A/C - Free Parking - Central Studio",
+      "city": "Queenstown（皇后镇）",
+      "name": "Walk to town - A/C -Free Parking - Central Studio",
       "provider": "Airbnb",
       "amount": 3011.36,
-      "cancellation": "以最新Airbnb订单页面为准。",
-      "checkIn": "11/3 15:00入住\n11/5 10:00退房（连住2晚）",
-      "amenities": "提供免费停车；中央单间，步行可到镇中心。",
+      "cancellation": "2026/10/27 15:00前可部分退款。",
+      "checkIn": "11/3 15:00起入住\n11/5 10:00前退房（连住2晚）",
+      "amenities": "早餐未注明。房源门外提供免费院内停车。无完整厨房；有微波炉、迷你冰箱和Nespresso咖啡机。",
       "address": "2 Anderson Heights Unit 2, Queenstown, Otago 9300, New Zealand",
       "mapQuery": "2 Anderson Heights Unit 2, Queenstown 9300, New Zealand",
-      "notes": "智能门锁自助入住；入住指南与Wi-Fi在入住前48小时开放。\nD6跳伞后可返回洗澡休息。\nD7需提前退房并带齐行李，自驾前往飞行集合点。",
-      "payment": "凭证显示已付CNY 3,011.36，涵盖11/3–11/5共2晚。"
+      "notes": "智能门锁自助入住；入住当天在Airbnb App查看进入、停车和Wi-Fi信息。提前入住或延迟退房须事先获批，每次NZD 50。入口无台阶，往返镇中心有陡坡和台阶。提供室内洗衣/烘干一体机、空调和供暖。",
+      "payment": "已付CNY 3,011.36，涵盖11/3–11/5共2晚。"
     },
     {
       "day": "D7",
       "date": "11/5周四",
-      "city": "Queenstown (皇后镇)",
-      "name": "月光下的度假胜地！浪漫世外桃源 + 热水浴缸\nMoonlight Escape! Romantic Retreat + Hot Tub",
+      "city": "Queenstown（皇后镇）",
+      "name": "Moonlight Escape! Romantic Retreat + Hot Tub",
       "provider": "Airbnb",
       "amount": 1464.16,
-      "cancellation": "此订单不可退款。",
-      "checkIn": "11/5 15:00入住\n11/6 11:00退房",
-      "amenities": "免费早餐送至套房，具体供应时间/本订单安排待确认。\n停车未说明。\n不提供厨房、微波炉。",
+      "cancellation": "不可退款。",
+      "checkIn": "11/5 15:00起入住\n11/6 11:00前退房",
+      "amenities": "含送至套房的欧陆式早餐，需提前约定时间并告知饮食禁忌。提供免费院内停车。无厨房、烹饪设施或微波炉；有迷你冰箱和茶咖设施。",
       "address": "91 Oxenbridge Tunnel Road, Arthurs Point, Queenstown, Otago, New Zealand",
       "mapQuery": "91 Oxenbridge Tunnel Road, Arthurs Point, Queenstown, New Zealand",
-      "notes": "房东亲自迎接，需联系房东确认抵达时间和入住安排。\nWi-Fi于入住前48小时开放。\n房东介绍提到户外雪松热水浴缸。\nD7峡湾活动当日换房；D8计划08:45出发格林诺奇，建议出发前退房并协调早餐时间。",
-      "payment": "凭证显示已付CNY 1,464.16"
+      "notes": "房东亲自迎接，需提前告知抵达时间；15:00前不接受提前入住。经Edith Cavell Bridge前转入Oxenbridge Tunnel Road，沿土路至岔路口寻找大门。提供高速Wi-Fi和供暖；无洗衣机、无烘干机；热水浴缸为共用设施。",
+      "payment": "已付CNY 1,464.16。"
     },
     {
       "day": "D8",
       "date": "11/6周五",
       "city": "Bannockburn（班诺克本）",
-      "name": "位于Olives的私人单间公寓\nPrivate Studio Unit in the Olives",
+      "name": "Private Studio Unit in the Olives",
       "provider": "Airbnb",
       "amount": 855.56,
       "cancellation": "2026/11/1 14:00前免费取消；之后不可退款。",
-      "checkIn": "11/6 14:00入住\n11/7 10:00退房",
-      "amenities": "早餐未说明。可驶入并停在所住单元旁；停车费未说明。",
+      "checkIn": "11/6 14:00起入住\n11/7 10:00前退房",
+      "amenities": "含欧陆式早餐、茶和咖啡。驶入大门后可免费停在所住单元旁。简易备餐区含微波炉、迷你冰箱、洗碗机及餐具；无炉灶。",
       "address": "61 Hall Road, Bannockburn, Otago 9384, New Zealand",
       "mapQuery": "61 Hall Road, Bannockburn 9384, New Zealand",
-      "notes": "钥匙盒自助入住，需联系房东获取进入方式/密码；Wi-Fi于入住前48小时开放。\nD8从格林诺奇返回皇后镇方向补给后前往Bannockburn，计划约16:15抵达；D9从这里退房出发。",
-      "payment": "凭证显示已付CNY 855.56"
+      "notes": "钥匙盒自助入住；提前从Airbnb取得进入指引。单元与主屋分开，设独立入口和户外区；院内有散养拉布拉多犬。提供Wi-Fi、空调和供暖；无洗衣机、无烘干机。",
+      "payment": "已付CNY 855.56。"
     },
     {
       "day": "D9",
       "date": "11/7周六",
-      "city": "Oamaru (奥马鲁)",
-      "name": "袖珍小屋度假\nTiny home getaway",
+      "city": "Oamaru（奥马鲁）",
+      "name": "Tiny home getaway",
       "provider": "Airbnb",
       "amount": 791.43,
-      "cancellation": "2026/10/24 15:00前免费取消；此后至10/31 15:00前可部分退款。",
-      "checkIn": "11/7 15:00入住\n11/8 10:00退房",
-      "amenities": "早餐未说明。院内可停车；停车费未说明。",
-      "address": "9A Traill Street, Oamaru, Otago Region 9400\n订单写作 9 Traill Street A；房东确认实际门牌为 9A。Google Maps 可能错误显示为 9 Traill Street。",
+      "cancellation": "2026/10/24 15:00前免费取消；此后至2026/10/31 15:00前可部分退款。",
+      "checkIn": "11/7 15:00起入住\n11/8 10:00前退房",
+      "amenities": "早餐未注明。提供免费院内车道停车。简易备餐区含微波炉、冰箱、吐司机和咖啡机；无炉灶，另有室外电烤炉。",
+      "address": "9A Traill Street, Oamaru, Otago 9400, New Zealand",
       "mapQuery": "-45.1143563,170.95948",
-      "notes": "钥匙盒自助入住，需联系房东获取进入方式/密码；Wi-Fi于入住前48小时开放。\nD9计划14:30抵达奥马鲁，15:00后办理入住。\n导航需使用房东确认的实际门牌，详见原始订单；D10计划09:00退房出发。",
-      "payment": "凭证显示已付CNY 791.43"
+      "notes": "钥匙盒自助入住；提前从Airbnb取得进入指引。导航使用9A Traill Street，勿误按9号；沿街上行右侧第一条车道，信箱有门牌。停车区至房屋需走台阶。提供Wi-Fi、空调和热泵供暖；无洗衣机、无烘干机。",
+      "payment": "已付CNY 791.43。"
     },
     {
       "day": "D10",
@@ -223,7 +223,7 @@
       "time": "08:00–约13:00",
       "checkIn": "06:45确认天气；07:15到场",
       "meeting": "39 Lucas Place, Queenstown",
-      "notes": "11月4日17:00前改为自驾集合并确认停车；自备午餐、水和防风防雨衣物。"
+      "notes": "2026/10/22运营商邮件及新确认单已确认Self Drive；06:45电话确认天气，07:15前到场，现场免费停车；自备午餐、水和防风防雨衣物。"
     },
     {
       "day": "D9",
@@ -233,7 +233,7 @@
       "time": "20:15–约21:45",
       "checkIn": "20:00前",
       "meeting": "Oamaru Blue Penguin Colony",
-      "notes": "高级看台；场内严禁拍照或录像；准备夜间保暖衣物。"
+      "notes": "2026/10/22官方邮件确认：预订已入系统，2位成人均为Premium Stand Evening Viewing，由GetYourGuide代理预订；场内严禁拍照或录像；准备夜间保暖衣物。"
     }
   ]
 }

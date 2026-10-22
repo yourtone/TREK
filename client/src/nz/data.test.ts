@@ -56,6 +56,11 @@ describe('NZ source-backed itinerary', () => {
       expect(experience).not.toHaveProperty('confirmation');
       expect(experience).not.toHaveProperty('contact');
     }
+    const published = JSON.stringify(source);
+    expect(published).not.toMatch(/HM[A-Z0-9]{6,}/);
+    expect(published).not.toMatch(/(?:GYG|XQK|CQH|KLK)[A-Z0-9-]{5,}/);
+    expect(published).not.toMatch(/(?:确认码|订单号|预订号|PIN|门锁密码|钥匙盒密码)/i);
+    expect(published).not.toMatch(/(?:\+64|0800)\s?(?:\d[\s-]?){6,}/);
   });
   it('caches road geometry and the mixed D7 flight line', () => {
     expect(Object.keys(roads)).toEqual(['3', '4', '5', '7', '8', '9', '10']);
