@@ -171,11 +171,19 @@ export default function Details({ tab, saved, save }: { tab: string; saved: Save
               <dd>4,135</dd>
             </div>
             <div>
-              <dt>小计</dt>
-              <dd>21,350</dd>
+              <dt>住宿 · 7笔／8晚</dt>
+              <dd>{source.stays.reduce((sum, stay) => sum + (typeof stay.amount === 'number' ? stay.amount : 0), 0).toLocaleString('zh-CN', {minimumFractionDigits: 2})}</dd>
+            </div>
+            <div>
+              <dt>已订体验 · 5项</dt>
+              <dd>{source.experiences.reduce((sum, item) => sum + item.amount, 0).toLocaleString('zh-CN', {minimumFractionDigits: 2})}</dd>
+            </div>
+            <div>
+              <dt>已记录费用合计 · CNY</dt>
+              <dd>{(21350 + source.stays.reduce((sum, stay) => sum + (typeof stay.amount === 'number' ? stay.amount : 0), 0) + source.experiences.reduce((sum, item) => sum + item.amount, 0)).toLocaleString('zh-CN', {minimumFractionDigits: 2})}</dd>
             </div>
           </dl>
-          <p className="nz-footnote">沿用原资料金额；币种未标明。住宿、门票、餐饮等尚未计入，非完整预算。</p>
+          <p className="nz-footnote">以上为CNY；租车沿用现有记录4,135。餐饮、燃油、停车、未购Skyline及现场附加费等未计入，非完整预算。</p>
         </div>
       </div>
     );

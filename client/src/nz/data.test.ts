@@ -2,6 +2,14 @@ import { describe, expect, it } from 'vitest';
 import { days, mapsUrl, places, routeUrl, source } from './data';
 import roads from './road-routes.json';
 describe('NZ source-backed itinerary', () => {
+  it('imports the current workbook amount columns and confirmed experience costs', () => {
+    const stays = source.stays.filter((stay) => stay.city !== '飞机');
+    expect(stays.every((stay) => typeof stay.amount === 'number' && stay.provider === 'Airbnb')).toBe(true);
+    expect(stays.reduce((sum, stay) => sum + (typeof stay.amount === 'number' ? stay.amount : 0), 0)).toBeCloseTo(9442.87, 2);
+    expect(source.experiences.reduce((sum, experience) => sum + experience.amount, 0)).toBeCloseTo(18614.60, 2);
+    expect(source.stays.find((stay) => stay.day === 'D5-D6')?.amenities).toContain('微波炉');
+    expect(source.stays.find((stay) => stay.day === 'D5-D6')?.notes).toContain('入住当天');
+  });
   it('covers each source itinerary day exactly once', () => {
     expect(days.map((d) => `D${d.id}`)).toEqual(source.itinerary.map((d) => d.day));
     expect(new Set(days.map((d) => d.id)).size).toBe(8);
