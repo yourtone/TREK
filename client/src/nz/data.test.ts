@@ -6,7 +6,7 @@ describe('NZ source-backed itinerary', () => {
     const stays = source.stays.filter((stay) => stay.city !== '飞机');
     expect(stays.every((stay) => typeof stay.amount === 'number' && stay.provider === 'Airbnb')).toBe(true);
     expect(stays.reduce((sum, stay) => sum + (typeof stay.amount === 'number' ? stay.amount : 0), 0)).toBeCloseTo(9442.87, 2);
-    expect(source.experiences.reduce((sum, experience) => sum + experience.amount, 0)).toBeCloseTo(18614.60, 2);
+    expect(source.experiences.reduce((sum, experience) => sum + (experience.amount ?? 0), 0)).toBeCloseTo(19356.86, 2);
     expect(source.stays.find((stay) => stay.day === 'D5-D6')?.amenities).toContain('微波炉');
     expect(source.stays.find((stay) => stay.day === 'D5-D6')?.notes).toContain('入住当天');
   });
@@ -57,8 +57,12 @@ describe('NZ source-backed itinerary', () => {
     for (const k of ['cook', 'guns', 'skydive'] as const) expect(places[k].approximate).toBe(false);
   });
   it('lists all confirmed experiences without private booking fields', () => {
-    expect(source.experiences).toHaveLength(5);
-    expect(source.experiences.map((item) => item.day)).toEqual(['D4', 'D5', 'D6', 'D7', 'D9']);
+    expect(source.experiences).toHaveLength(6);
+    const luge = source.experiences.find((item) => item.name.includes('Skyline'));
+    expect(luge?.notes).toContain('每人6圈');
+    expect(luge?.checkIn).toContain('17:00–17:30');
+    expect(luge?.amount).toBe(742.26);
+    expect(source.experiences.map((item) => item.day)).toEqual(['D4', 'D5', 'D6', 'D7', 'D9', 'D6']);
     for (const experience of source.experiences) {
       expect(experience.status).toBe('已预订');
       expect(experience).not.toHaveProperty('confirmation');

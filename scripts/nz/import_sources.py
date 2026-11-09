@@ -31,6 +31,8 @@ def stay(r):
                 payment=f'已付CNY {amount:,.2f}。' if isinstance(amount,(int,float)) else '—')
 
 def experience(r):
+    if 'Skyline' in r['活动项目']:
+        return dict(day=r['Day'], date=r['日期'], name=r['活动项目'], status='已预订', time='17:00场次；后续圈数按排队及运营时间', checkIn='17:00–17:30完成首圈入场扫描；计划16:00换票', meeting='Skyline Gondola Base, Brecon Street, Queenstown', notes='2位成人，往返缆车＋每人6圈Luge；电子凭证无需打印，换票后持卡扫描。不含自助餐。用户确认实付NZD202.00／CNY742.26（每人NZD101.00）。', amount=r['订单总价'], currency=r['货币'])
     old = next(x for x in previous['experiences'] if x['day']==r['Day'])
     # Preserve curated, non-private display notes; raw voucher/contact columns are excluded.
     result = {k:old[k] for k in ['day','date','name','status','time','checkIn','meeting','notes']}

@@ -52,11 +52,11 @@ export default function Details({ tab, saved, save }: { tab: string; saved: Save
           <TicketCheck />
           <div>
             <h2>已经确定的高光时刻</h2>
-            <p>5 个已预订项目 · 已按确认单更新集合时间</p>
+            <p>6 个已预订项目 · 已按确认单更新集合时间</p>
           </div>
         </div>
         {source.experiences.map((experience) => (
-          <article className="nz-detail-card" key={experience.day}>
+          <article className="nz-detail-card" key={experience.day + experience.name}>
             <div className="nz-card-top">
               <span className="nz-pill">{experience.day} · {experience.date}</span>
               <span className="nz-booked">{experience.status}</span>
@@ -175,15 +175,15 @@ export default function Details({ tab, saved, save }: { tab: string; saved: Save
               <dd>{source.stays.reduce((sum, stay) => sum + (typeof stay.amount === 'number' ? stay.amount : 0), 0).toLocaleString('zh-CN', {minimumFractionDigits: 2})}</dd>
             </div>
             <div>
-              <dt>已订体验 · 5项</dt>
-              <dd>{source.experiences.reduce((sum, item) => sum + item.amount, 0).toLocaleString('zh-CN', {minimumFractionDigits: 2})}</dd>
+              <dt>已订体验 · 6项</dt>
+              <dd>{source.experiences.reduce((sum, item) => sum + (item.amount ?? 0), 0).toLocaleString('zh-CN', {minimumFractionDigits: 2})}</dd>
             </div>
             <div>
               <dt>已记录费用合计 · CNY</dt>
-              <dd>{(21350 + source.stays.reduce((sum, stay) => sum + (typeof stay.amount === 'number' ? stay.amount : 0), 0) + source.experiences.reduce((sum, item) => sum + item.amount, 0)).toLocaleString('zh-CN', {minimumFractionDigits: 2})}</dd>
+              <dd>{(21350 + source.stays.reduce((sum, stay) => sum + (typeof stay.amount === 'number' ? stay.amount : 0), 0) + source.experiences.reduce((sum, item) => sum + (item.amount ?? 0), 0)).toLocaleString('zh-CN', {minimumFractionDigits: 2})}</dd>
             </div>
           </dl>
-          <p className="nz-footnote">以上为CNY；租车沿用现有记录4,135。餐饮、燃油、停车、未购Skyline及现场附加费等未计入，非完整预算。</p>
+          <p className="nz-footnote">以上为CNY；租车沿用现有记录4,135。餐饮、燃油、停车及现场附加费等未计入，非完整预算。</p>
         </div>
       </div>
     );
